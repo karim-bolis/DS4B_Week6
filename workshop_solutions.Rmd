@@ -18,4 +18,14 @@ output:
 
 ## Loading the data
 
+```{r}
+library(tidyverse)
+week6_data = read_csv("raw_data/data.csv")
+```
 ## An interesting plot
+
+```{r}
+ggplot(data=week6_data, mapping = aes(x=Sex, y=weight) ) +
+  geom_point()
+```
+
